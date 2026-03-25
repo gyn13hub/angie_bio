@@ -1,5 +1,5 @@
 const author = {
-  name: `NGUYEN`,
+  name: `THẰNG CHỦ WEB`,
   nickname: "gyn13",
   facebook: "https://www.facebook.com/gyn13here",
   discord: "https://discord.com/invite/5vVV9qHtJ8",
@@ -7,8 +7,8 @@ const author = {
 };
 
 const buy = {
-  title: `See on Github`,
-  link: `https://github.com/gyn13hub`,
+  title: `See on Facebook`,
+  link: `https://www.facebook.com/gyn13here`,
 };
 
 export { author, buy };
