@@ -4,23 +4,29 @@ import { buy } from "../sample"
 
 import svgUnderline from '../assets/underline.svg'
 import arrowCard from '../assets/arrow-card.svg'
-
 const portfolio = [
   { 
-    name: 'Portfolio design', desc: `UI design - User research - webflow development`,
-    cover: `https://images.pexels.com/photos/1051075/pexels-photo-1051075.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2`
+    name: 'Nextcloud',
+    desc: 'Lưu trữ đám mây cá nhân',
+    cover: 'https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/nextcloud.svg',
+    link: 'https://cloud.nguyen13.com'
   },
   { 
-    name: 'Portfolio design', desc: `UI design - User research - webflow development`,
-    cover: `https://images.pexels.com/photos/2303781/pexels-photo-2303781.jpeg?auto=compress&cs=tinysrgb&w=1600`
+    name: 'Vaultwarden',
+    desc: 'Tự quản lí mật khẩu trên internet',
+    cover: 'https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/bitwarden.svg',
+    link: 'https://vault.nguyen13.com/'
   },
   { 
-    name: 'Portfolio design', desc: `UI design - User research - webflow development`,
-    cover: `https://images.pexels.com/photos/441963/pexels-photo-441963.jpeg?auto=compress&cs=tinysrgb&w=1600`
+    name: 'Private AdguardHome',
+    desc: 'Cài đặt trên server giúp chặn QC khi kết nối wifi',
+    cover: 'https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/adguard.svg',
   },
   { 
-    name: 'Portfolio design', desc: `UI design - User research - webflow development`,
-    cover: `https://images.pexels.com/photos/245240/pexels-photo-245240.jpeg?auto=compress&cs=tinysrgb&w=1600`
+    name: 'Home Assistant',
+    desc: 'Điều khiển mọi thiếu bị IOT trong nhà',
+    cover: 'https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/homeassistant.svg',
+    link: 'https://stupidhome.nguyen13.com'
   },
 ]
 ---
@@ -34,7 +40,7 @@ const portfolio = [
   
     <div class="max-w-3xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-10"> 
       {portfolio.map(item => ( 
-        <a href={buy.link} target="_blank" class="flex flex-col bg-white p-5 group relative transition-all duration-200 hover:shadow-[4px_4px_0px_rgba(0,0,0,0.3)]">
+        <a href={item.link} target="_blank" class="flex flex-col bg-white p-5 group relative transition-all duration-200 hover:shadow-[4px_4px_0px_rgba(0,0,0,0.3)]">
           <div class="w-full h-[200px] overflow-hidden border-2">
            <img src={item.cover} alt="" class="w-full h-full object-cover" />
           </div>
