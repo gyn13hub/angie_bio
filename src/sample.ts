@@ -1,15 +1,14 @@
 const author = {
-  name: `Angela`,
-  nickname: `angie`,
-  tiktok: `https://www.tiktok.com/@indieteamofone`,
-  ig: `https://www.instagram.com/indieteamofone/`,
-  x: `https://x.com/indieteamofone`,
-  email: "mailto:anthonylannn@gmail.com",
+  name: `NGUYEN`,
+  nickname: "gyn13",
+  facebook: "https://facebook.com/xxx",
+  discord: "https://discord.gg/xxx",
+  linkedin: "https://linkedin.com/in/xxx",
 };
 
 const buy = {
   title: `See on Github`,
-  link: `https://github.com/anthonylan/angie`,
+  link: `https://github.com/gyn13hub`,
 };
 
 export { author, buy };
