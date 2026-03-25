@@ -4,9 +4,9 @@ import svgPinkStar from '../assets/pink-star.svg'
 import { author, buy } from '../sample'
 
 const links = [
-    { name: 'About', path: '/', target: '_self' },
-    { name: 'Blog', path: '/blog/', target: '_self' },
-    { name: 'Hire Me', path: buy.link, target: '_blank' },
+  { icon: 'ri-facebook-fill', path: author.facebook },
+  { icon: 'ri-discord-fill', path: author.discord },
+  { icon: 'ri-linkedin-box-fill', path: author.linkedin },
 ]
 
 const { pathname } = Astro.url
@@ -35,15 +35,16 @@ const { pathname } = Astro.url
             <a href="#" class="flex md:hidden" id="menu-open">
                 <i class="ri-menu-2-line text-2xl"></i>
             </a>
-            <ul class="hidden md:flex">
-                {links.map(item => ( 
-                    <li class="border-l-2 border-black p-3 py-4">
-                        <a href={item.path} target={item.target} class="whitespace-nowrap relative flex items-center before:absolute before:left-0 before:bottom-1 before:h-[8px] before:w-0 before:bg-[var(--yellow)] before:transition-all before:duration-300 hover:before:w-full">
-                            <span class="relative z-5">{item.name} {pathname == item.path ? '//' : ''}</span>
-                        </a>
-                    </li>
-                ))}
-            </ul>
+<ul class="hidden md:flex">
+  {links.map(item => ( 
+    <li class="border-l-2 border-black p-3 py-4">
+      <a href={item.path} target="_blank"
+         class="flex items-center justify-center text-2xl transition-all duration-200 hover:translate-y-[2px]">
+        <i class={item.icon}></i>
+      </a>
+    </li>
+  ))}
+</ul>
         </nav>
     </div>
   </header>
@@ -58,8 +59,8 @@ const { pathname } = Astro.url
     <ul class="flex flex-col justify-center items-center gap-4 md:hidden">
         {links.map(item => ( 
             <li class="py-3">
-                <a href={item.path} target={item.target} class="p-3 whitespace-nowrap text-2xl font-bold">
-                    {item.name} {pathname == item.path ? '//' : ''}
+                <a href={item.path} target="_blank" class="p-3 whitespace-nowrap text-2xl font-bold">
+                    <i class={`${item.icon} text-3xl`}></i> {pathname == item.path ? '//' : ''}
                 </a>
             </li>
         ))}
