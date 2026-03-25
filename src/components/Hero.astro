@@ -1,7 +1,7 @@
 ---
 import Button from "./Button.astro"
 import Bars from "./Bars.astro"
-
+import meImg from '../assets/myself.jpg'
 import svgheroContent from '../assets/hero-content.svg'
 import svgRedStar from '../assets/red-star.svg'
 import svgIdea from '../assets/idea.svg'
@@ -65,10 +65,11 @@ import { author, buy } from '../sample'
   </section>
 
 
-  <style>
-    #me{
-     background-image: url('https://images.pexels.com/photos/1858175/pexels-photo-1858175.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2');
-     background-position: top;
-     background-size: cover;
-    }
-   </style>
+<div class="relative w-full h-[310px] border-2">
+  <div 
+    style={`background-image: url(${meImg.src});`} 
+    class="absolute inset-0 bg-cover bg-center">
+  </div>
+
+  <div class="absolute inset-0 bg-black/20"></div>
+</div>
