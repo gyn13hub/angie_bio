@@ -8,8 +8,8 @@ const author = {
 };
 
 const buy = {
-  title: `See on Facebook`,
-  link: `https://www.facebook.com/gyn13here`,
+  title: `TỰ HỦY/SELF-DESTRUCT`,
+  link: `/selfdestructtroll`,
 };
 
 export { author, buy };
