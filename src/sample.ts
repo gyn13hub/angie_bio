@@ -9,7 +9,7 @@ const author = {
 
 const buy = {
   title: `TỰ HỦY/SELF-DESTRUCT`,
-  link: `/selfdestructtroll`,
+  link: `/self-destruct`,
 };
 
 export { author, buy };
