@@ -1,4 +1,4 @@
-realconst author = {
+const author = {
   name: `THẰNG CHỦ WEB`,
   nickname: "gyn13",
   facebook: "https://www.facebook.com/nguyen13real",
